@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTA Founder Section</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .founder-section {
+            max-width: 1400px;
+            margin: 50px auto;
+            padding: 20px;
+            display: flex;
+            gap: 40px;
+            position: relative;
+        }
+
+        .content-wrapper {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .founder-title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .founder-quote {
+            font-size: 24px;
+            line-height: 1.5;
+            color: #555;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .founder-bio {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            position: relative;
+            min-height: 600px;
+        }
+
+        .main-image {
+            width: 95%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .overlay-image {
+            position: absolute;
+            top: 50px;
+            left:-10px;
+            width: 60%;
+            height: 85%;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        /* /* Responsive Design /* */
+        @media (max-width: 1024px) {
+            .founder-section {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            .image-wrapper {
+                min-height: 400px;
+            }
+
+            .overlay-image {
+                top: -20px;
+                right: -20px;
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .founder-title {
+                font-size: 28px;
+            }
+
+            .founder-quote {
+                font-size: 20px;
+            }
+
+            .image-wrapper {
+                min-height: 300px;
+            }
+
+            .overlay-image {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="founder-section">
+        <div class="content-wrapper">
+            <h2 class="founder-title">ANTHONY GUCCIARDI, OTA FOUNDER</h2>
+            <p class="founder-quote">"When I was losing the fight against chronic Lyme Disease, I was forced to try everything for myself and find out what really worked."</p>
+            <p class="founder-bio">OTA Founder Anthony Gucciardi is a wellness entrepreneur and writer whose thoughts have been featured in Forbes, Fortune, NASDAQ Leadership Classes, WSJ & USA Today best-selling books, Tiny Buddha publications, Wordables, and read by millions worldwide.</p>
+            <p class="founder-bio">In suffering from chronic Lyme Disease, debilitating pain, and battling facial paralysis, Anthony found himself searching beyond the endless rounds of antibiotics and conventional treatments that weren't providing relief. That journey quickly led to the discovery of a harsh truth: many health supplements were driven by hype rather than results, while a select few were providing significant benefits. In searching the US National Library of Medicine, Anthony was able to correlate the growing research to the natural compounds he found to be providing the best outcomes.</p>
+            <p class="founder-bio">Anthony has worked with industry-leading doctors, PhD formulators, and major health supplement brands and manufacturers found in stores such as Whole Foods, Natural Grocers, GNC, and pharmacies across the country for more than 15 years. In 2023, Anthony founded Of The Ancients with a strong team and a simple mission: to create these uncommon formulations - rooted in nature, proven in science - that genuinely help people feel and live better.</p>
+        </div>
+        <div class="image-wrapper">
+            <img src="assets/download - 2025-11-06T195246.719 (1).png" alt="OTA" class="main-image">
+            <img src="assets/download - 2025-11-06T195254.439.png" alt="Anthony Gucciardi" class="overlay-image">
+        </div>
+    </section>
+</body>
+</html>
